@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Twilio SendGrid Example</title>
+    </head>
+    <body>
+        <h1>Twilio SendGrid Example</h1>
+        {% with messages = get_flashed_messages() %}
+        {% for message in messages %}
+        <p>{{ message }}</p>
+        {% endfor %}
+        {% endwith %}
+        <form action="" method="post">
+            <p>Your email: <input type="text" name="recipient"></p>
+            <p><input type="submit" value="Send a Test Email"></p>
+        </form>
+    </body>
+</html>
